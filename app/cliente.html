@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="es-CO">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Style Hub</title>
+  <link rel="shortcut icon" href="../assets/img/the_style_hub_icon.png" type="image/x-icon" />
+
+  <meta name="author" content="juan pablo zapata" />
+  <meta name="description" content="Taller 2 de maquetacion web" />
+  <meta name="keywords" content="TALLER, taller, Taller" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="MobileOptimized" content="width" />
+  <meta name="HandheldFriendly" content="true" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+</head>
+
+<body class="bg-white">
+  <!--Nabvar-->
+  <header class="container rounded-bottom-4 mb-5 bg-body-tertiary rounded py-4">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary rounded-4 fixed-top">
+      <div class="container flex-wrap">
+        <a class="navbar-brand" href="#">
+          <img src="../assets/img/user-avatar.png" alt="User Avatar" height="75">
+        </a>
+
+        <!-- Esta info del usuario ya no depende de "collapse", siempre se ve -->
+        <div class="d-flex flex-column flex-lg-row">
+          <h6 class="fw-bold mx-lg-3 mb-1 mb-lg-0">Juan Pablo Zapata</h6>
+          <h6 class="fw-bold mx-lg-3 mb-1 mb-lg-0">Telefono: 3022098260</h6>
+          <h6 class="fw-bold mx-lg-3 mb-1 mb-lg-0">Email: juanpablozapatagonsales@gmail.com</h6>
+        </div>
+
+        <a href="../index.html" class="btn btn-outline-success fw-bold">Inicio</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid mt-3">
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="#home">Mis Pedidos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="#menu1">Pedidos Activos</a>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+
+        <div id="home" class="container tab-pane show active">
+          <h4 class="text-center text-dark mt-3">Creditos</h4>
+          <div class="table-responsive">
+            <table class="table table-bordered border-success table-sm">
+              <thead>
+                <tr>
+                  <th class="col-md-2">Productos</th>
+                  <th class="col-md-2">Venta</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Riñonera Urbana</td>
+                  <td>453</td>
+                </tr>
+                <tr>
+                  <td>Chaqueta de Denim Oversize</td>
+                  <td>176</td>
+                </tr>
+                <tr>
+                  <td>Camisa Oxford Hombre</td>
+                  <td>1200</td>
+                </tr>
+                <tr>
+                  <td>Pantalón Cargo Beige</td>
+                  <td>809</td>
+                </tr>
+                <tr>
+                  <td>Vestido Casual Mujer</td>
+                  <td>2300</td>
+                </tr>
+                <tr>
+                  <td>Gorra Bucket Negra</td>
+                  <td>768</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row justify-content-xxl-start">
+            <div class="col-12 col-md-6">
+              <div class="alert alert-danger" role="alert">
+                !Recuerda Pagar a Tiempo Para Evitar Irregularidades!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="menu1" class="container tab-pane fade">
+          <h4 class="text-center text-dark mt-3">Pedidos Activos</h4>
+          <div class="row justify-content-center">
+            <div class="col-12 col-md-6">
+              <div class="table-responsive">
+                <table class="table table-bordered border-success table-sm">
+                  <thead>
+                    <tr>
+                      <th>Producto</th>
+                      <th>Talla</th>
+                      <th>Estado</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Chaqueta de Denim Oversize</td>
+                      <td>M</td>
+                      <td><span class="badge bg-warning text-dark">En preparación</span></td>
+                    </tr>
+                    <tr>
+                      <td>Gorra Bucket Negra</td>
+                      <td>Única</td>
+                      <td><span class="badge bg-info text-dark">Enviado</span></td>
+                    </tr>
+                    <tr>
+                      <td>Pantalón Cargo Beige</td>
+                      <td>L</td>
+                      <td><span class="badge bg-warning text-dark">En preparación</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="alert alert-danger" role="alert">
+                !Algunos Pedidos Pueden Tardar un Poco!
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-center py-4 mt-5 border-top bg-dark text-light">
+    <div class="row">
+      <div class="col">
+        <h6>Herramientas</h6>
+        <hr>
+        <p>Bootstrap 5</p>
+        <p>HTML</p>
+      </div>
+      <div class="col">
+        <h6>Sobre la Tienda</h6>
+        <hr>
+        <p>Quienes Somos</p>
+        <p>Terminos y Condiciones</p>
+        <p>Politica de Privacidad</p>
+      </div>
+      <div class="col">
+        <h6>Siguenos</h6>
+        <hr>
+        <p>Instagram</p>
+        <p>Facebook</p>
+        <p>Correo Electronico</p>
+      </div>
+    </div>
+    <hr>
+    <h6>The Style Hub &copy; Todos los Derechos Reservados 2026</h6>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
