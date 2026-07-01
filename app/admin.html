@@ -24,11 +24,10 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
 
-<body>
+<body class="container-fluid">
 
   <div class="d-flex">
 
-    <!-- Sidebar: fija a la izquierda en pantallas grandes, offcanvas en celular/tablet -->
     <div class="offcanvas-lg offcanvas-start bg-body-tertiary flex-shrink-0" tabindex="-1" id="sidebarMenu"
       style="width: 250px;">
       <div class="offcanvas-header">
@@ -40,22 +39,22 @@
       <div class="offcanvas-body">
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active mb-2 fw-bold text-dark" aria-current="page" href="../index.html">Inicio</a>
+            <i class="bi bi-person-vcard-fill mx-4" style="font-size: 50px;"></i>
+            <a class="nav-link active mb-2 fw-bold text-dark" aria-current="page" href="../index.html"><i class="bi bi-house p-2"></i>Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mb-2 fw-bold text-dark" aria-current="page" href="#">Productos</a>
+            <a class="nav-link active mb-2 fw-bold text-dark" aria-current="page" href="#"><i class="bi bi-bag-fill p-2"></i>Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mb-2 fw-bold text-dark" href="#" aria-current="">Administrador</a>
+            <a class="nav-link active mb-2 fw-bold text-dark" href="#" aria-current=""><i class="bi bi-person-badge p-2"></i>Administrador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active mb-2 fw-bold text-dark" href="#">Dashboard</a>
+            <a class="nav-link active mb-2 fw-bold text-dark" href="#"><i class="bi bi-aspect-ratio p-2"></i>Dashboard</a>
           </li>
         </ul>
       </div>
     </div>
 
-    <!-- Columna derecha: header propio + todo el contenido de la pagina -->
     <div class="flex-grow-1" style="min-width: 0;">
 
       <header class="d-flex align-items-center p-3 border-bottom">
@@ -71,209 +70,200 @@
       <main class="p-3">
         <div class="row g-0 justify-content-center">
           <div class="col-12 col-md-2 p-2">
-            <div class="card  h-30 shadow-lg mb-5  mbbg-body-tertiary rounded">
-              <div class="card-body">
-                <h5 class="card-title text-center  ">Ingresos</h5>
-                <p class="card-text text-center mb-1 text-success">10.000.000</p>
-                <p class="card-text text-center mb-1 text-success">20.000.000</p>
-                <p class="card-text text-center mb-1 text-danger">-100.000.000</p>
-                <p class="card-text text-center mb-1 text-success">50.000.000</p>
+            <div class="card h-30  shadow-lg mb-5 rounded bg-black overflow-hidden">
+              <div class="card-body text-center">
+                <p class="text-center text-primary  fw-bold">Ingresos</p>
+                <h3>
+                  <span class="badge d-block text-truncate fs-4 text-white">$30,0</span>
+                </h3>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3 p-2">
-            <div class="card h-30 shadow-lg mb-5 bg-body-tertiary rounded">
-              <div class="card-body">
-                <h5 class="card-title text-center">Inventario</h5>
-                <p class="card-text text-center mb-1">50/Docenas-Camisas Hombre</p>
-                <p class="card-text text-center mb-1">100/Docenas-Pantalones-Mujeres</p>
-                <p class="card-text text-center mb-1">25/Diges oro 18k</p>
-
+          <div class="col-12 col-md-2 p-2">
+            <div class="card h-30 shadow-lg mb-5 rounded bg-black overflow-hidden">
+              <div class="card-body text-center">
+                <p class=" text-primary fw-bold">Unidades</p>
+                <h3>
+                  <span class="badge d-block text-truncate fs-4 text-white">100,0</span>
+                </h3>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3 p-2">
-            <div class="card  h-30 shadow-lg  mb-5 bg-body-tertiary rounded">
-              <div class="card-body">
-                <h5 class="card-title text-center">Personal</h5>
-                <p class="card-text text-center mb-1">Juan Pablo</p>
-                <p class="card-text text-center mb-1">Arturo Gomez</p>
-                <p class="card-text text-center mb-1">Gustabo Hernandez</p>
-                <p class="card-text text-center mb-1">Isabella Gallego</p>
-                <p class="card-text text-center mb-1">Yenifer Lopez</p>
-
-
+          <div class="col-12 col-md-2 p-2">
+            <div class="card h-30 shadow-lg  rounded bg-black overflow-hidden">
+              <div class="card-body text-center">
+                <p class="text-center text-primary  fw-bold"> Empleados</p>
+                <h3>
+                  <span class="badge d-block text-truncate fs-4 text-white">19</span>
+                </h3>
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-3 p-2">
-            <div class="card  h-30 shadow-lg  mb-5 bg-body-tertiary rounded">
-              <div class="card-body">
-                <h5 class="card-title text-center">Reportes</h5>
-                <p class="card-text text-center mb-1">Mala atencion</p>
-                <p class="card-text text-center mb-1">Camisas Sucias</p>
-                <p class="card-text text-center mb-1">Bajo Rendimiento Laboral</p>
-                <p class="card-text text-center mb-1">Maquinaria Dañada</p>
-                <p class="card-text text-center mb-1">Subida de Precio de oro</p>
+          <div class="col-12 col-md-2 p-2">
+            <div class="card h-30 shadow-lg mb-5 rounded bg-black overflow-hidden">
+              <div class="card-body text-center">
+                <p class="text-center text-primary fw-bold">Ventas</p>
+                <h3>
+                  <span class="badge d-block text-truncate fs-4 text-white">300</span>
+                </h3>
               </div>
             </div>
           </div>
-        </div>
-        <div class="table-responsive">
-          <table class="table table-bordered border-success">
-            <h4 class=" text-center text-dark ">Lista de Clientes</h4>
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">ID</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Venta</th>
-                <th scope="col">Acciones</th>
+          <div class="table-responsive">
+            <table class="table table-bordered border-success">
+              <h4 class=" text-center text-dark ">Lista de Clientes</h4>
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">ID</th>
+                  <th scope="col">Nombre</th>
+                  <th scope="col">Venta</th>
+                  <th scope="col">Acciones</th>
 
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>32412 </td>
-                <td>Yeison Zapata</td>
-                <td>100/Camisas Hombre <span class="badge bg-danger  mx-5 float-sm-end ">Pago Pendiente</span></td>
-                <td>
-                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#myModal">
-                      <i class="bi bi-pencil-square"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-trash3-fill"></i>
-                    </button>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>32412 </td>
+                  <td>Yeison Zapata</td>
+                  <td>100/Camisas Hombre <span class="badge bg-danger  mx-5 float-sm-end ">Pago Pendiente</span></td>
+                  <td>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#myModal" aria-label="editar">
+                        <i class="bi bi-pencil-square"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-danger btn-sm" aria-label="eliminar">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>54673</td>
+                  <td>Hernesto Hernandez</td>
+                  <td>5/Diges 18k <span class="badge bg-danger  mx-5 float-sm-end ">Pago Pendiente </span></td>
+                  <td>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#myModal" aria-label="editar">
+                        <i class="bi bi-pencil-square"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-danger btn-sm" aria-label="eliminar">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr>
+                  <th scope="row">3</th>
+                  <td>85943</td>
+                  <td>Cristian Gonzalez</td>
+                  <td>50/Carteras <span class="badge bg-success  mx-5 float-sm-end ">Vendido</span></td>
+                  <td>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#myModal" aria-label="editar">
+
+                        <i class="bi bi-pencil-square"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-outline-danger btn-sm" aria-label="eliminar">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td>85453</td>
+                  <td>Juan Gonzalez</td>
+                  <td>50/Riñoneras <span class="badge bg-danger  mx-5 float-sm-end ">Pago Pendiente</span></td>
+                  <td>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#myModal" aria-label="editar">
+                        <i class="bi bi-pencil-square"></i>
+                      </button>
+
+                      <button type="button" class="btn btn-outline-danger btn-sm" aria-label="eliminar">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td>98743</td>
+                  <td>Estiben Gomez</td>
+                  <td>50/Gorras <span class="badge bg-success  mx-5 float-sm-end ">Vendido</span></td>
+                  <td>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#myModal" aria-label="editar">
+                        <i class="bi bi-pencil-square"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-danger btn-sm" aria-label="eliminar">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td>84932</td>
+                  <td>Sara Zapata</td>
+                  <td>200/pantalones Dama <span class="badge bg-success  mx-5  float-sm-end">Vendido</span> </td>
+                  <td>
+                    <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
+                      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#myModal" aria-label="editar">
+                        <i class="bi bi-pencil-square"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-danger btn-sm" aria-label="eliminar">
+                        <i class="bi bi-trash3-fill"></i>
+                      </button>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+
+                  <!-- Modal Header -->
+                  <div class="modal-header ">
+                    <h4 class="modal-title">Actualizar Datos</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>54673</td>
-                <td>Hernesto Hernandez</td>
-                <td>5/Diges 18k <span class="badge bg-danger  mx-5 float-sm-end ">Pago Pendiente </span></td>
-                <td>
-                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#myModal">
-                      <i class="bi bi-pencil-square"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-trash3-fill"></i>
-                    </button>
+
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Agregar Compras</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="number" class="form-control" id="pago" placeholder="pago">
+                      <label for="pago">Pagar</label>
+                    </div>
                   </div>
-                </td>
-              </tr>
 
-              <tr>
-                <th scope="row">3</th>
-                <td>85943</td>
-                <td>Cristian Gonzalez</td>
-                <td>50/Carteras <span class="badge bg-success  mx-5 float-sm-end ">Vendido</span></td>
-                <td>
-                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#myModal">
-
-                      <i class="bi bi-pencil-square"></i>
-                    </button>
-
-                    <button type="button" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-trash3-fill"></i>
-                    </button>
+                  <!-- Modal footer -->
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn- btn-outline-danger" data-bs-dismiss="modal">Salir</button>
                   </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">4</th>
-                <td>85453</td>
-                <td>Juan Gonzalez</td>
-                <td>50/Riñoneras <span class="badge bg-danger  mx-5 float-sm-end ">Pago Pendiente</span></td>
-                <td>
-                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#myModal">
-                      <i class="bi bi-pencil-square"></i>
-                    </button>
 
-                    <button type="button" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-trash3-fill"></i>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">5</th>
-                <td>98743</td>
-                <td>Estiben Gomez</td>
-                <td>50/Gorras <span class="badge bg-success  mx-5 float-sm-end ">Vendido</span></td>
-                <td>
-                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#myModal">
-                      <i class="bi bi-pencil-square"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-trash3-fill"></i>
-                    </button>
-                  </div>
-                </td>
-
-              </tr>
-              <tr>
-                <th scope="row">6</th>
-                <td>84932</td>
-                <td>Sara Zapata</td>
-                <td>200/pantalones Dama <span class="badge bg-success  mx-5  float-sm-end">Vendido</span> </td>
-                <td>
-                  <div class="d-flex flex-column flex-md-row align-items-center justify-content-center gap-2">
-                    <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
-                      data-bs-target="#myModal">
-                      <i class="bi bi-pencil-square"></i>
-                    </button>
-                    <button type="button" class="btn btn-outline-danger btn-sm">
-                      <i class="bi bi-trash3-fill"></i>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <!-- The Modal -->
-          <div class="modal" id="myModal">
-            <div class="modal-dialog">
-              <div class="modal-content">
-
-                <!-- Modal Header -->
-                <div class="modal-header ">
-                  <h4 class="modal-title">Actualizar Datos</h4>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
-
-                <!-- Modal body -->
-                <div class="modal-body">
-                  <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Agregar Compras</label>
-                  </div>
-                  <div class="form-floating">
-                    <input type="number" class="form-control" id="pago" placeholder="pago">
-                    <label for="pago">Pagar</label>
-                  </div>
-                </div>
-
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                  <button type="button" class="btn btn- btn-outline-danger" data-bs-dismiss="modal">Salir</button>
-                </div>
-
               </div>
             </div>
           </div>
-        </div>
       </main>
 
     </div>
@@ -281,14 +271,13 @@
 
   </div>
 
-  <!-- El footer va fuera del d-flex para que ocupe todo el ancho de la pantalla -->
-  <footer class="text-center py-4 mt-5 border-top bg-dark text-light">
+  <footer class="text-center py-4 mt-5 border-top bg-dark   text-light">
     <div class="row">
       <div class="col">
         <p class="fw-bold">Herramientas</p>
         <hr>
-        <p>Bootstrap 5</p>
-        <p>HTML</p>
+        <p><i class="bi bi-bootstrap p-2"></i>Bootstrap 5</p>
+        <p><i class="bi bi-filetype-html p-2"></i>HTML</p>
       </div>
       <div class="col">
         <p class="fw-bold">Sobre la Tienda</p>
@@ -300,15 +289,14 @@
       <div class="col">
         <p class="fw-bold">Siguenos</p>
         <hr>
-        <p>Instagram</p>
-        <p>Facebook</p>
-        <p>Correo Electronico</p>
+        <p><i class="bi bi-instagram p-2"></i>Instagram</p>
+        <p><i class="bi bi-facebook p-2"></i>Facebook</p>
+        <p><i class="bi bi-envelope-at p-2"></i>Correo Electronico</p>
       </div>
     </div>
     <hr>
-    <p class="fw-bold">The Style Hub &copy; Todos los Derechos Reservados 2026</p>
+    <p class="fw-bold">The Style Hub &copy;Todos los Derechos Reservador 2026</p>
   </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
